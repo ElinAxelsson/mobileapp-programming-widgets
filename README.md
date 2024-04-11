@@ -1,11 +1,8 @@
 
 # Rapport
-
-**Skriv din rapport här!**
-
-_Du kan ta bort all text som finns sedan tidigare_.
-
-## Följande grundsyn gäller dugga-svar:
+```
+Jag ändrade namnet
+```
 
 - Ett kortfattat svar är att föredra. Svar som är längre än en sida text (skärmdumpar och programkod exkluderat) är onödigt långt.
 - Svaret skall ha minst en snutt programkod.
@@ -33,7 +30,8 @@ function errorCallback(error) {
 
 Bilder läggs i samma mapp som markdown-filen.
 
-![](android.png)
+
+![](fannysshot.png)
 
 Läs gärna:
 
