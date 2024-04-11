@@ -1,34 +1,30 @@
 
 # Rapport
 ```
-Jag ändrade namnet
+Jag ändrade namnet på appen till "Cool app" genom att lägga till en string:
+ "<string name="app_name">Cool app</string>" i string-filen
+ och sedan lade till denna kod i AndroidManifest-filen
+:
+        "android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">"
+
+Efter detta lade jag till två Textviews som heter "Knapp1" och "Knapp2".
+Under dessa lade jag till en EditText som har placeholdern "Name".
+Till sist lade jag till en knapp som heter "BUTTON" och ändra därefter margin
+till margin på alla widgets till 40dp. Exempel visas nedan:
+<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:layout_margin="40dp"
+            android:text="@string/button" />
 ```
 
-- Ett kortfattat svar är att föredra. Svar som är längre än en sida text (skärmdumpar och programkod exkluderat) är onödigt långt.
-- Svaret skall ha minst en snutt programkod.
-- Svaret skall inkludera en kort övergripande förklarande text som redogör för vad respektive snutt programkod gör eller som svarar på annan teorifråga.
-- Svaret skall ha minst en skärmdump. Skärmdumpar skall illustrera exekvering av relevant programkod. Eventuell text i skärmdumpar måste vara läsbar.
-- I de fall detta efterfrågas, dela upp delar av ditt svar i för- och nackdelar. Dina för- respektive nackdelar skall vara i form av punktlistor med kortare stycken (3-4 meningar).
 
-Programkod ska se ut som exemplet nedan. Koden måste vara korrekt indenterad då den blir lättare att läsa vilket gör det lättare att hitta syntaktiska fel.
-
-```
-function errorCallback(error) {
-    switch(error.code) {
-        case error.PERMISSION_DENIED:
-            // Geolocation API stöds inte, gör något
-            break;
-        case error.POSITION_UNAVAILABLE:
-            // Misslyckat positionsanrop, gör något
-            break;
-        case error.UNKNOWN_ERROR:
-            // Okänt fel, gör något
-            break;
-    }
-}
-```
-
-Bilder läggs i samma mapp som markdown-filen.
 
 
 ![](fannysshot.png)
